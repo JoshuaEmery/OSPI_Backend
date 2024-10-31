@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.send(`Hello ${process.env.TEST}`);
+  res.send(`Hello API Verfied Worked ${process.env.TEST}`);
 });
 
 app.listen(PORT, () => {
